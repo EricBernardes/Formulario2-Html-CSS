@@ -1,0 +1,37 @@
+@font-face{
+    font-family: Osvald;
+    src: url(../fontes/Oswald-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: Osvald, Verdana, Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-image: url(../imagens/fundo.jpg);
+    background-size:cover;
+}
+
+form{
+    background-color: #2e2c2ca1;
+    width: 60%;
+    max-width: 55rem;
+    margin: auto;
+}
+
+.classes{
+    font-weight: bold;
+
+}
+
+h2,h3{
+    text-align: center;
+}
+
+input[type=text]{
+    width: 85%;
+    
+}
+
+textarea{
+    width: 85%;
+    height: 7rem;
+}
