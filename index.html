@@ -14,73 +14,117 @@
   </head>
 
   <body>
-    <h2>Formulário meramente com intuito acadêmico</h2>
-    <h3>Buscando praticar as funções de formulários e CSS</h3>
+    <!-- <div id="title">
+      <h2>Formulário meramente com intuito acadêmico</h2>
+      <h3>Buscando praticar as funções de formulários e CSS</h3>
+    </div> -->
 
     <form action="./me" method="post">
-      <span class="classes">Nome</span>
-      <br />
-      <input type="text" name="nome" />
-      <br />
-      <span class="classes">E-mail</span>
-      <br />
-      <input type="text" name="email" />
-      <br />
-      <span class="classes">Idade</span>
-      <br />
-      <input type="text" name="idade" />
-      <br />
-      <span class="classes">Profissão</span>
-      <br />
-      <select name="profissao" plceholder="Selecione uma das opções">
-        <option value="desempregado">Desempregado</option>
-        <option value="trabalhando">Trabalhando</option>
-        <option value="estudando">Estudando</option>
-      </select>
-      <br />
-      <span class="classes">Qual modelo de celular utiliza?</span>
-      <br />
-      <input type="radio" name="celular" value="android" />Android
-      <br />
-      <input type="radio" name="celular" value="iphone" />Iphone
-      <br />
-      <input type="radio" name="celular" value="outro" />Outro
-      <br />
-      <input type="radio" name="celular" value="nenhum" />Nenhum
-      <br />
-      <span class="classes">Satisfacão com seu nível escolar:</span>
-      <br />
-      <select name="nivelescolar" plceholder="Selecione uma das opções">
-        <option value="muitosatisfeito">Muito Satisfeito</option>
-        <option value="satisfeito">Satisfeito</option>
-        <option value="poucosatisfeito">Pouco Satisfeito</option>
-        <option value="insatisfeito">Insatisfeito</option>
-        <option value="muitoinsatisfeito">Muito Insatisfeito</option>
-      </select>
-      <br />
-      <span class="classes">Games que joga:</span>
-      <br />
-      <input type="checkbox" name="cs2" />Counter-Strike 2
-      <br />
-      <input type="checkbox" name="lol" />League of Legends
-      <br />
-      <input type="checkbox" name="dota" />Dota 2
-      <br />
-      <input type="checkbox" name="fortnite" />Fortnite
-      <br />
-      <input type="checkbox" name="cyberpunk" />Cyberpunk 2077
-      <br />
-      <input type="checkbox" name="minecraft" />Minecraft
-      <br />
-      <input type="checkbox" name="cod" />Call of Duty
-      <br />
-      <input type="checkbox" name="bf2042" />Battlefield 2042
-      <br />
-      <span class="classes">Deixe um comentário ou sugestão:</span>
-      <br />
-      <textarea name="comentario"></textarea>
-      <br />
-      <input type="submit" value="Enviar" />
+      <div id="title">
+        <h2>Formulário meramente com intuito acadêmico</h2>
+        <h3>Buscando praticar as funções de formulários e CSS</h3>
+      </div>
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <div id="name">
+          <span class="classes">Nome</span>
+          <br />
+          <input type="text" name="nome" id="nome" required />
+          <br />
+        </div>
+
+        <div id="email">
+          <span class="classes">E-mail</span>
+          <br />
+          <input type="email" name="email" required />
+          <br />
+        </div>
+
+        <div id="age">
+          <span class="classes">Idade</span>
+          <br />
+          <input type="number" name="idade" id="idade" min="18" required />
+          <br />
+        </div>
+
+        <div id="profissao">
+          <span class="classes">Profissão</span>
+          <br />
+          <select name="profissao" required>
+            <option selected disabled value="">Escolha uma das opções:</option>
+            <option value="desempregado">Desempregado</option>
+            <option value="trabalhando">Trabalhando</option>
+            <option value="estudando">Estudando</option>
+          </select>
+          <br />
+          <br />
+        </div>
+      </fieldset>
+
+      <div id="celular">
+        <br />
+        <span class="classes">Qual modelo de celular utiliza?</span>
+        <br />
+        <input type="radio" name="celular" value="android" />Android
+        <br />
+        <input type="radio" name="celular" value="iphone" />Iphone
+        <br />
+        <input type="radio" name="celular" value="outro" />Outro
+        <br />
+        <input type="radio" name="celular" value="nenhum" />Nenhum
+        <br />
+        <br />
+      </div>
+
+      <div id="escolaridade">
+        <span class="classes">Satisfacão com seu nível de escolaridade:</span>
+        <br />
+        <select name="nivelescolar" required>
+          <option selected disabled value="">Escolha uma das opções:</option>
+          <option value="muitosatisfeito">Muito Satisfeito</option>
+          <option value="satisfeito">Satisfeito</option>
+          <option value="poucosatisfeito">Pouco Satisfeito</option>
+          <option value="insatisfeito">Insatisfeito</option>
+          <option value="muitoinsatisfeito">Muito Insatisfeito</option>
+        </select>
+        <br />
+        <br />
+      </div>
+
+      <div id="games">
+        <span class="classes">Games que joga:</span>
+        <br />
+        <input type="checkbox" name="cs2" />Counter-Strike 2
+        <br />
+        <input type="checkbox" name="lol" />League of Legends
+        <br />
+        <input type="checkbox" name="dota" />Dota 2
+        <br />
+        <input type="checkbox" name="fortnite" />Fortnite
+        <br />
+        <input type="checkbox" name="cyberpunk" />Cyberpunk 2077
+        <br />
+        <input type="checkbox" name="minecraft" />Minecraft
+        <br />
+        <input type="checkbox" name="cod" />Call of Duty
+        <br />
+        <input type="checkbox" name="bf2042" />Battlefield 2042
+        <br />
+        <br />
+      </div>
+
+      <div id="textarea">
+        <span class="classes">Deixe um comentário ou sugestão:</span>
+        <br />
+        <textarea name="comentario"></textarea>
+        <br />
+        <br />
+      </div>
+
+      <div id="buttom" align="center">
+        <input type="submit" value="Enviar" />
+      </div>
     </form>
   </body>
 </html>

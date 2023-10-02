@@ -1,37 +1,98 @@
-@font-face{
-    font-family: Osvald;
-    src: url(../fontes/Oswald-VariableFont_wght.ttf);
+@font-face {
+  font-family: Osvald;
+  src: url(../fontes/Oswald-VariableFont_wght.ttf);
 }
 
-body{
-    font-family: Osvald, Verdana, Arial, Helvetica, sans-serif;
-    color: whitesmoke;
-    background-image: url(../imagens/fundo.jpg);
-    background-size:cover;
+body {
+  font-family: Osvald, Verdana, Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  background-image: url(../imagens/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-form{
-    background-color: #2e2c2ca1;
-    width: 60%;
-    max-width: 55rem;
-    margin: auto;
+form {
+  background-color: #2e2c2ca1;
+  width: 60%;
+  max-width: 55rem;
+  margin: auto;
+  position: relative;
+  padding: 20px 20px 20px 20px;
 }
 
-.classes{
-    font-weight: bold;
-
+.classes,
+legend {
+  font-weight: bold;
+  font-size: 23px;
+}
+legend {
+  text-decoration: underline;
 }
 
-h2,h3{
-    text-align: center;
+h2,
+h3 {
+  text-align: center;
 }
 
-input[type=text]{
-    width: 85%;
-    
+h2 {
+  font-size: 35px;
 }
 
-textarea{
-    width: 85%;
-    height: 7rem;
+h3 {
+  font-size: 25px;
+}
+
+textarea {
+  height: 8rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type="email"],
+#nome {
+  width: 85%;
+}
+
+#idade {
+  width: 12%;
+}
+
+select {
+  border-style: inherit;
+  border-radius: 10px;
+  width: 15rem;
+  height: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  position: relative;
+  left: 55px;
+  height: 25px;
+  border-radius: 1px;
+  border-style: solid;
+}
+
+#profissao {
+  position: absolute;
+  right: 6rem;
+  top: 22.7rem;
+}
+
+fieldset {
+  border-style: solid;
+  border-radius: 15px;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+  border-style: solid;
+  border-color: whitesmoke;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: #2e2c2cd7;
 }
