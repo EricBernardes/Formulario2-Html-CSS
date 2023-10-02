@@ -14,57 +14,57 @@
   </head>
 
   <body>
-    <!-- <div id="title">
-      <h2>Formulário meramente com intuito acadêmico</h2>
-      <h3>Buscando praticar as funções de formulários e CSS</h3>
-    </div> -->
-
     <form action="./me" method="post">
+      <!--Criação do formulario-->
       <div id="title">
         <h2>Formulário meramente com intuito acadêmico</h2>
         <h3>Buscando praticar as funções de formulários e CSS</h3>
       </div>
 
+      <!-- Agrupando alguns dados para separalos dos demais -->
       <fieldset>
         <legend>Dados pessoais</legend>
         <div id="name">
-          <span class="classes">Nome</span>
+          <label for="nome">Nome</label>
           <br />
           <input type="text" name="nome" id="nome" required />
           <br />
         </div>
 
         <div id="email">
-          <span class="classes">E-mail</span>
+          <label for="email">E-mail</label>
           <br />
           <input type="email" name="email" required />
           <br />
         </div>
 
-        <div id="age">
-          <span class="classes">Idade</span>
-          <br />
-          <input type="number" name="idade" id="idade" min="18" required />
-          <br />
-        </div>
+        <div id="agrupados">
+          <!-- Foi criado esse id agrupados para poder posicionar melhor esses dois campos um do lado do outro -->
+          <div id="age">
+            <label for="idade">Idade</label>
+            <br />
+            <input type="number" name="idade" id="idade" min="18" required />
+            <br />
+          </div>
 
-        <div id="profissao">
-          <span class="classes">Profissão</span>
-          <br />
-          <select name="profissao" required>
-            <option selected disabled value="">Escolha uma das opções:</option>
-            <option value="desempregado">Desempregado</option>
-            <option value="trabalhando">Trabalhando</option>
-            <option value="estudando">Estudando</option>
-          </select>
-          <br />
-          <br />
+          <div id="profissao">
+            <label for="profissao">Profissão</label>
+            <br />
+            <select name="profissao" required>
+              <option selected disabled value="">
+                Escolha uma das opções:
+              </option>
+              <option value="desempregado">Desempregado</option>
+              <option value="trabalhando">Trabalhando</option>
+              <option value="estudando">Estudando</option>
+            </select>
+            <br />
+          </div>
         </div>
       </fieldset>
 
       <div id="celular">
-        <br />
-        <span class="classes">Qual modelo de celular utiliza?</span>
+        <label for="celular">Qual modelo de celular utiliza?</label>
         <br />
         <input type="radio" name="celular" value="android" />Android
         <br />
@@ -78,7 +78,9 @@
       </div>
 
       <div id="escolaridade">
-        <span class="classes">Satisfacão com seu nível de escolaridade:</span>
+        <label for="nivelescolar"
+          >Satisfacão com seu nível de escolaridade:</label
+        >
         <br />
         <select name="nivelescolar" required>
           <option selected disabled value="">Escolha uma das opções:</option>
@@ -93,7 +95,7 @@
       </div>
 
       <div id="games">
-        <span class="classes">Games que joga:</span>
+        <label for="games">Games que joga:</label>
         <br />
         <input type="checkbox" name="cs2" />Counter-Strike 2
         <br />
@@ -115,7 +117,7 @@
       </div>
 
       <div id="textarea">
-        <span class="classes">Deixe um comentário ou sugestão:</span>
+        <label for="comentario">Deixe um comentário ou sugestão:</label>
         <br />
         <textarea name="comentario"></textarea>
         <br />
@@ -125,6 +127,7 @@
       <div id="buttom" align="center">
         <input type="submit" value="Enviar" />
       </div>
+      <!-- Conclusão do formulario -->
     </form>
   </body>
 </html>

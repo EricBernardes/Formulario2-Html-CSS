@@ -1,9 +1,11 @@
 @font-face {
+  /*inserção de fonte de terceiros, fonte Osvald do google */
   font-family: Osvald;
   src: url(../fontes/Oswald-VariableFont_wght.ttf);
 }
 
 body {
+  /* definição da fonte ao texto do site, e configuração da imagem de background */
   font-family: Osvald, Verdana, Arial, Helvetica, sans-serif;
   color: whitesmoke;
   background-image: url(../imagens/fundo.jpg);
@@ -12,19 +14,22 @@ body {
 }
 
 form {
+  /* tamannho do formulário, backgroun, posicionamento */
   background-color: #2e2c2ca1;
   width: 60%;
-  max-width: 55rem;
+  max-width: 45rem;
   margin: auto;
   position: relative;
   padding: 20px 20px 20px 20px;
 }
 
-.classes,
+label,
 legend {
+  /* formatação dos nomes de cada campo e o titulo no topo dos dados pessoais */
   font-weight: bold;
   font-size: 23px;
 }
+
 legend {
   text-decoration: underline;
 }
@@ -43,6 +48,7 @@ h3 {
 }
 
 textarea {
+  /* definindo o tamanho e formato do textarea */
   height: 8rem;
   width: 100%;
   border-radius: 5px;
@@ -50,14 +56,17 @@ textarea {
 
 input[type="email"],
 #nome {
+  /* definindo tamanho da caixa de texto do email e do nome */
   width: 85%;
 }
 
 #idade {
-  width: 12%;
+  /* tamanho do box de idade */
+  width: 25%;
 }
 
 select {
+  /* definindo o estilo dos select do formulário */
   border-style: inherit;
   border-radius: 10px;
   width: 15rem;
@@ -67,6 +76,7 @@ select {
 input[type="text"],
 input[type="email"],
 input[type="number"] {
+  /* definindo estilo de 3 tipos de entradas input, o de nome, email e idade */
   position: relative;
   left: 55px;
   height: 25px;
@@ -74,18 +84,14 @@ input[type="number"] {
   border-style: solid;
 }
 
-#profissao {
-  position: absolute;
-  right: 6rem;
-  top: 22.7rem;
-}
-
 fieldset {
+  /* modificação para fazer a borda da separação dos dados pessoais mais arredondada */
   border-style: solid;
   border-radius: 15px;
 }
 
 input[type="submit"] {
+  /* alterando forma do botão de submit */
   border-radius: 10px;
   height: 40px;
   width: 80px;
@@ -95,4 +101,10 @@ input[type="submit"] {
   font-size: 18px;
   color: white;
   background-color: #2e2c2cd7;
+}
+
+#agrupados {
+  /* utilizado para fazer os dois campos idade e profissão ficarem um do lado do outro */
+  display: flex;
+  position: relative;
 }
